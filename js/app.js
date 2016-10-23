@@ -1,53 +1,33 @@
 $(document).ready(function() {
 	$('.nav-links').click(function(event) {
 		var selected = event.target.id;
-		
-		if(selected === 'about') {
-			$('.home').hide();
-			$('.skills').hide();
-			$('.projects').hide();
-			$('.contact').hide();
-			$('.np').show();
-			$('.about').show();
-		} else if(selected === 'skills') {
-			$('.home').hide();
-			$('.about').hide();
-			$('.projects').hide();
-			$('.contact').hide();
-			$('.np').show();
-			$('.skills').show();
-		} else if(selected === 'projects') {
-			$('.home').hide();
-			$('.skills').hide();
-			$('.about').hide();
-			$('.contact').hide();
-			$('.np').show();
-			$('.projects').show();
-		} else if(selected === 'contact') {
-			$('.home').hide();
-			$('.skills').hide();
-			$('.projects').hide();
-			$('.about').hide();
-			$('.np').show();
-			$('.contact').show();
-		} 
+
+		if (selected === 'about') {
+			$('.page').addClass('hidden');
+			$('.about').removeClass('hidden');
+		} else if (selected === 'skills') {
+			$('.page').addClass('hidden');
+			$('.skills').removeClass('hidden');
+		} else if (selected === 'projects') {
+			$('.page').addClass('hidden');
+			$('.projects').removeClass('hidden');
+		} else if (selected === 'contact') {
+			$('.page').addClass('hidden');
+			$('.contact').removeClass('hidden');
+		}
 	});
 
 	$('.name').click(function(event) {
-		$('.about').hide();
-		$('.skills').hide();
-		$('.projects').hide();
-		$('.contact').hide();
-		$('.np').hide();
-		$('.home').show();
+		$('.page').addClass('hidden');
+		$('.home').removeClass('hidden');
 	});
 
 	$('.grid').hover(
 		function(event) {
-			$(this.children).show();
-		}, 
+			$(this.children[1]).css('z-index', '10');
+		},
 		function() {
-			$(this.children).hide();
+			$(this.children[1]).css('z-index', '1');
 		}
 	);
 });
