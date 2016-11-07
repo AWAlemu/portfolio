@@ -17,7 +17,7 @@ a {
 }
 
 header {
-    background-color: yellow;
+    background-color: rgba(0,0,0,.8);
 }
 
 section {
@@ -63,7 +63,7 @@ section {
     text-transform: uppercase;
     margin-left: 1.25em;
     margin-top: 1em;
-    color: black;
+    color: #fff;
 }
 
 #menu-icon {
@@ -115,7 +115,6 @@ section {
     margin: 0 0 0 1em;
     border: 1px solid black;
     background: url('../image/bg-black-noise-bright.png');
-    background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
 }
