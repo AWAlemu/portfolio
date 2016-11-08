@@ -10,13 +10,16 @@ ul {
 
 body, hr {
     margin: 0;
+    padding: 0;
+    background: url('../image/binary_wp.jpg');
+    background-size: cover;
 }
 
 a {
     color: inherit;
 }
 
-header {
+header, footer {
     background-color: rgba(0,0,0,.8);
 }
 
@@ -146,13 +149,13 @@ section {
 }
 
 .content {
-    max-width: 59em;
-    min-height: 28em;
+    max-width: 61em;
+    min-height: 28.5em;
     height: 77%;
     margin: 0.5em auto 0em auto;
-    padding: 0em;
-    border-top: 0.1px solid #fff;
-    font-family: 'Old Standard TT', serif;
+    padding: 0.25em 1em;
+    border-top: 0.1px solid hidden;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .text {
@@ -173,11 +176,8 @@ section {
     border: 1px solid black;
 }
 
-.bio {
-    width: 45em;
-    height: 15em;
-    margin: 20% 0;
-    border: 1px solid black;
+.about .content {
+    background-color: rgba(255,255,255,1);
 }
 
 .hidden {
@@ -186,7 +186,6 @@ section {
 
 .social {
     height: 3em;
-    max-width: 61em;
     margin: 0em auto 0em auto;
     padding: 0.5em 1em;
     text-align: center;
@@ -196,13 +195,17 @@ section {
     display: inline-block;
 }
 
+.github {
+    color: #fff;
+}
+
 .linkedin {
     color: #0077B5;
     margin-left: 1em;
 }
 
 .home,
-.contact {
+.resume {
     text-align: center;
 }
 
@@ -212,6 +215,8 @@ section {
     left: 46%;
     font-family: 'Rajdhani', sans-serif;
     font-size: 2.5em;
+    color: white;
+    background-color: rgba(0,0,0,.6);
 }
 
 #email {
@@ -242,7 +247,7 @@ section {
 	border: 0.1px solid black;
 	cursor: pointer;
 	position: relative;
-	top: -15.5em;
+	top: -15.25em;
 	z-index: 1;
 }
 

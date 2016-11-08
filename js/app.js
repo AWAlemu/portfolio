@@ -11,9 +11,9 @@ $(document).ready(function() {
 		} else if (selected === 'projects') {
 			$('.page').addClass('hidden');
 			$('.projects').removeClass('hidden');
-		} else if (selected === 'contact') {
+		} else if (selected === 'resume') {
 			$('.page').addClass('hidden');
-			$('.contact').removeClass('hidden');
+			$('.resume').removeClass('hidden');
 		}
 	});
 
