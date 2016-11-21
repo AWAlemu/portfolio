@@ -1,17 +1,14 @@
 $(document).ready(function() {
-	$('.nav-links').click(function(event) {
+	$('.nav-links, .nav-menu').click(function(event) {
 		var selected = event.target.id;
 
-		if (selected === 'about') {
+		if (selected === 'about' || selected ==='mnu-about') {
 			$('.page').addClass('hidden');
 			$('.about').removeClass('hidden');
-		} else if (selected === 'skills') {
-			$('.page').addClass('hidden');
-			$('.skills').removeClass('hidden');
-		} else if (selected === 'projects') {
+		} else if (selected === 'projects' || selected ==='mnu-projects') {
 			$('.page').addClass('hidden');
 			$('.projects').removeClass('hidden');
-		} else if (selected === 'resume') {
+		} else if (selected === 'resume' || selected === 'mnu-resume') {
 			$('.page').addClass('hidden');
 			$('.resume').removeClass('hidden');
 		}
@@ -22,12 +19,12 @@ $(document).ready(function() {
 		$('.home').removeClass('hidden');
 	});
 
-	$('.grid').hover(
+	$('.row').hover(
 		function(event) {
 			$(this.children[1]).css('z-index', '10');
 		},
 		function() {
-			$(this.children[1]).css('z-index', '1');
+			$(this.children[1]).css('z-index', '-1');
 		}
 	);
 });
