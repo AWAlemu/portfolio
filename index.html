@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex Weldetsadik</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Rajdhani:600, 300, 500|PRoboto+Mono' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500|Rajdhani:600, 700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <header>
         <div class="masthead">
-            <div class="name">
+            <div class="name in-blk">
                 <p id="first">Alex</p>
                 <p id="last">Weldetsadik</p>
             </div>
-            <div class="links">
+            <div class="links in-blk">
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#" id="about">About</a></li>
-                        <!-- <li><a href="#skills" id="skills">Skills</a></li> -->
-                        <li><a href="#" id="projects">Projects</a></li>
-                        <li><a href="#" id="resume">Resume</a></li>
+                        <li class="in-blk"><a href="#" id="about">About</a></li>
+                        <li class="in-blk"><a href="#" id="projects">Projects</a></li>
+                        <li class="in-blk"><a href="#" id="resume">Resume</a></li>
                     </ul>
                 </div>
                 <div class="nav-menu hidden">
@@ -31,10 +30,9 @@
                         <li id="menu-icon"><a href="#" class="drop-menu-link"><i class="menu-icon fa fa-bars fa-3x"> </i></a>
                             <div class="drop-menu-div">
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <!-- <li><a href="#skills">Skills</a></li> -->
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#" id="mnu-about">About</a></li>
+                                    <li><a href="#" id="mnu-projects">Projects</a></li>
+                                    <li><a href="#" id="mnu-resume">Resume</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -43,26 +41,32 @@
             </div>
         </div>
     </header>
-    <!-- <hr/> -->
     <section class="main-frame ">
         <div class="page home">
             <div class="content">
-                <h1 class="greeting">Hello,<br/>World!</h1>
+                <div class="greeting">
+                    <h1>Hello,<br/>World!</h1>
+                </div>
             </div>
         </div>
         <div class="page about hidden">
             <div class="content">
-                <h3 class="title">Introduction</h3>
-                <p>I am a full stack developer. I am from Addis Ababa, Ethiopia, where I was born, raised and completed my high school education. For my undergraduate studies, I went to Florida Atlantic University, where I earned a Bachelor of Science degree. My most notable achievements during my undergraduate studies include winning several Departmental Academic Excellence Awards, and a first prize in Statewide Mathematics Olympics annually held at University of North Florida.</p>
-                <h3 class="title">My Passion</h3>
-                <p>I am passionate about solving problems, because it engrosses my attention and gives me intellectual gratification. I also enjoy building things, because it gives me a great satisfaction to see a complete product as a result my effort.</p>
-                <p>I studied Computer Science because it leverages my strengths in problem solving and analytical thinking, my interest in building things, my passion for solving challenging puzzles and problems, and it satisfies my appetite for intellectual gratification.</p>
-                <h3 class="title">What Is Important To Me</h3>
-                <p>I highly value progress, because I believe it is the building block of success.</p>
-                <h3 class="title">Favorite Pastime</h3>
-                <p>My favorite pastime is playing sports, particularly soccer and basketball. I enjoy competing to the fullest, and of course I love to win.</p>
-                <h3 class="title">Favorite Music</h3>
-                <p>I have eclectic taste in music. I am mostly drawn to music that embodies good story telling and soulful vocal performance. Lately, I’ve been listening to Chris Stapelton’s album “Traveler.” It is full of great stories and amazing sound from a remarkable artist.</p>
+                <div class="bio">
+                    <h2>Introduction</h2>
+                    <p>I'm Alex, and I am from Addis Ababa, Ethiopia, where I was born, raised and completed my high school education. For my undergraduate studies, I went to Florida Atlantic University, where I earned a Bachelor of Science degree. 
+                    <p>My most notable achievements during my undergraduate studies include winning several Departmental Academic Excellence Awards, and a first prize in Statewide Mathematics Olympics annually held at University of North Florida.</p>
+                    <p>I’m full-stack software engineer with proven ability to develop applications on both client and server-side.</p>
+                    <p>On the client-side, my skillset includes designing and building performant user interfaces that feature ease of use, responsiveness, faster load times, and robust interactivity. 
+                    <p>I have demonstrated ability in using MVC design pattern and creating reusable components by developing templating solutions from scratch and utilizing front-end libraries such as ReactJS.</p> 
+                    <p>On the server-side, I am skilled in designing and implementing RESTful API endpoints and developing business-logic applications using Object-Oriented Programming principles. I also have experience in designing database schema and interfacing with databases.</p>
+                    <h2>Passion</h2>
+                    <p>I am passionate about solving problems, because it engrosses my attention and gives me intellectual gratification. I also enjoy building things, because it gives me a great satisfaction to see a complete product as a result my effort.</p>
+                    <p>I studied Computer Science because it leverages my passion and strength in problem solving, my interest in building things, and it satisfies my appetite for intellectual gratification.</p>
+                    <h2>Favorite Pastime</h2>
+                    <p>My favorite pastime is playing sports, particularly soccer and basketball. I enjoy competing to the fullest, and I love to win.</p>
+                    <h2>Favorite Music</h2>
+                    <p>I have eclectic taste in music. I am mostly drawn to music that embodies great story telling and soulful vocal performance. Lately, I’ve been listening to Chris Stapelton’s album “Traveler.” It is full of great stories and amazing sound from a remarkable artist.</p>
+                </div>
             </div>
         </div>
         <div class="page skills hidden">
@@ -73,155 +77,215 @@
         <div class="page projects hidden">
             <div class="content">
                 <div class="row">
-                    <div class="grid" id="sl">
-                        <img class="proj-img" src="image/sl.png">
-                        <div class="grid-hover">
-
-                            <div class="grid-hover-icons-box right">
-	                            <ul>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://github.com/AWAlemu/fullstack_app" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
-	                                    </a>
-	                                </li>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://warm-brook-74008.herokuapp.com/" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
-	                                    </a>
-	                                </li>
-	                            </ul>
-                            </div>
-							<div class="proj-dscrp">
-                            	<h3 class="proj-title">Shopping List</h3>
-                            	<ul class="proj-dscrp-list right">
-                            		<li>Mocha</li>
-                            		<li>Chai</li>
-                            		<li>HTML</li>
-                            		<li>CSS</li>
-                            		<li>JavaScript</li>
-                            		<li>JQuery</li>
-                            		<li>AJAX</li>
-                            	</ul>
-                            	<ul class="proj-dscrp-list">
-                            		<li>Node.js</li>
-                            		<li>Express</li>
-                            		<li>Express-session</li>
-                            		<li>Mongoose</li>
-                            		<li>REST</li>
-                            		<li>Passport</li>
-                            		<li>Bcryptjs</li>
-                            	</ul>
-                            </div>                            
+                    <div class="grid">
+                        <div class="proj-img-box in-blk left">
+                            <img class="proj-img" src="image/sl.png">
+                        </div>
+                        <div class="proj-dscrp-box in-blk right">
+                            <h3 class="proj-title">Shopping List</h3>
+                            <p class="proj-dscrp">A full-stack web application where users can create account to make, modify and store a list of shopping items.</p>
+                            <ul class="proj-dscrp-list">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>Express-session</li>
+                                <li>Mongoose</li>
+                                <li>REST</li>
+                            </ul>
+                            <ul class="proj-dscrp-list">
+                                <li>Passport.js</li>
+                                <li>Bcrypt.js</li>
+                                <li>Mocha</li>
+                                <li>Chai</li>
+                                <li>Chai-http</li>
+                            </ul> 
+                            <ul class="proj-dscrp-list">    
+                                <li>AJAX</li>
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="grid right" id="wa">
-                        <img class="proj-img" src="image/wa.png">
-                        <div class="grid-hover">
-                            <div class="grid-hover-icons-box right">
-	                            <ul>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://github.com/AWAlemu/weather-app-react-redux" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
-	                                    </a>
-	                                </li>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://awalemu.github.io/weather-app-react-redux/build" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
-	                                    </a>
-	                                </li>
-	                            </ul>
-                            </div>
-                            <div class="proj-dscrp">
-                            	<h3 class="proj-title">Weather App</h3>
-                            	<ul class="proj-dscrp-list right">
-                                    <li>Babel-core</li>
-                            		<li>HTML</li>
-                            		<li>CSS</li>
-                            		<li>JavaScript</li>
-                            		<li>JQuery</li>
-                            		<li>AJAX</li>
-                            	</ul>
-                            	<ul class="proj-dscrp-list">
-                            		<li>React</li>
-                            		<li>React-DOM</li>
-                            		<li>Redux</li>
-                            		<li>React-Redux</li>
-                            		<li>Webpack</li>
-                            		<li>Chokidar</li>
-                            	</ul>
-                            </div>  
+                    <div class="grid-hover">
+                        <div class="grid-hover-icons-box">
+                            <ul>
+                                <li class="grid-hover-icons">
+                                    <a href="https://github.com/AWAlemu/fullstack_app" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
+                                    </a>
+                                </li>
+                                <li class="grid-hover-icons">
+                                    <a href="https://warm-brook-74008.herokuapp.com/" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="grid" id="pic">
-                        <img class="proj-img" src="image/pic.png">
-                        <div class="grid-hover">
-                        	<div class="grid-hover-icons-box right">
-	                            <ul>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://github.com/AWAlemu/pictionary" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
-	                                    </a>
-	                                </li>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://quiet-caverns-41171.herokuapp.com/" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
-	                                    </a>
-	                                </li>
-	                            </ul>
-	                        </div>
-	                        <div class="proj-dscrp">
-                            	<h3 class="proj-title">Pictionary</h3>
-                            	<ul class="proj-dscrp-list right">
-                            		<li>HTML</li>
-                            		<li>CSS</li>
-                            		<li>JavaScript</li>
-                            		<li>JQuery</li>
-                            	</ul>
-                            	<ul class="proj-dscrp-list">
-                            		<li>Node.js</li>
-                            		<li>Express</li>
-                            		<li>Socket.io</li>
-                            	</ul>
-                            </div>  
+                    <div class="grid">
+                        <div class="proj-img-box in-blk right">
+                            <img class="proj-img" src="image/wa.png">
+                        </div>
+                        <div class="proj-dscrp-box in-blk left">
+                            <h3 class="proj-title">Weather App</h3>
+                            <p class="proj-dscrp">Utilized ReactJS to create a modular application that allows users search for current weather data and provides autocomplete results for location search.</p>
+                            <ul class="proj-dscrp-list">
+                                <li>ReactJS</li>
+                                <li>React-DOM</li>
+                                <li>Redux</li>
+                                <li>React-Redux</li>
+                            </ul>
+                            <ul class="proj-dscrp-list">
+                                <li>Webpack</li>
+                                <li>Chokidar</li>
+                                <li>Babel-core</li>
+                                <li>AJAX</li>
+                            </ul>
+                            <ul class="proj-dscrp-list">
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="grid right" id="hoc">
-                        <img class="proj-img" src="image/hoc.png">
-                        <div class="grid-hover">
-                            <div class="grid-hover-icons-box right">
-	                            <ul>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://github.com/AWAlemu/Hot-or-cold-react-redux-build" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
-	                                    </a>
-	                                </li>
-	                                <li class="grid-hover-icons">
-	                                    <a href="https://awalemu.github.io/Hot-or-cold-react-redux-build" target="_blank">
-	                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
-	                                    </a>
-	                                </li>
-	                            </ul>
-                            </div>
-                            <div class="proj-dscrp">
-                            	<h3 class="proj-title">Hot or Cold</h3>
-                            	<ul class="proj-dscrp-list right">
-                            		<li>Babel-core</li>
-                            		<li>HTML</li>
-                            		<li>CSS</li>
-                            		<li>JavaScript</li>
-                            		<li>JQuery</li>
-                            	</ul>
-                            	<ul class="proj-dscrp-list">
-                            		<li>React</li>
-                            		<li>React-DOM</li>
-                            		<li>Redux</li>
-                            		<li>React-Redux</li>
-                            		<li>Webpack</li>
-                            		<li>Chokidar</li>
-                            	</ul>
-                            </div>  
+                    <div class="grid-hover">
+                        <div class="grid-hover-icons-box">
+                            <ul>
+                                <li class="grid-hover-icons">
+                                    <a href="https://github.com/AWAlemu/weather-app-react-redux" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
+                                    </a>
+                                </li>
+                                <li class="grid-hover-icons">
+                                    <a href="https://awalemu.github.io/weather-app-react-redux/build" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid">
+                        <div class="proj-img-box in-blk left">
+                            <img class="proj-img" src="image/pic.png">
+                        </div>
+                        <div class="proj-dscrp-box in-blk right">
+                            <h3 class="proj-title">Pictionary</h3>
+                            <p class="proj-dscrp">A real-time full-stack app where users can chat, draw and simultaneously view a “whiteboard” for playing a fun game of pictionary.</p>
+                            <ul class="proj-dscrp-list">
+                                <li>Socket.io</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                            </ul>
+                            <ul class="proj-dscrp-list">
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                            </ul>
+                            <ul class="proj-dscrp-list right">
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                    </div>  
+                    <div class="grid-hover">
+                    	<div class="grid-hover-icons-box">
+                            <ul>
+                                <li class="grid-hover-icons">
+                                    <a href="https://github.com/AWAlemu/pictionary" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
+                                    </a>
+                                </li>
+                                <li class="grid-hover-icons">
+                                    <a href="https://quiet-caverns-41171.herokuapp.com/" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid">
+                        <div class="proj-img-box in-blk right" id="hoc">
+                            <img class="proj-img" src="image/hoc.png">
+                        </div>
+                        <div class="proj-dscrp-box in-blk left">
+                            <h3 class="proj-title">Hot or Cold</h3>
+                            <p class="proj-dscrp">A fun guessing game for random numbers between 1 and 100.</p>
+                            <ul class="proj-dscrp-list">
+                                <li>ReactJS</li>
+                                <li>React-DOM</li>
+                                <li>Redux</li>
+                                <li>React-Redux</li>
+                            </ul>
+                            <ul class="proj-dscrp-list">
+                                <li>Webpack</li>
+                                <li>Chokidar</li>
+                                <li>Babel-core</li>
+                                <li>Babel-loader</li>
+                            </ul>
+                            <ul class="proj-dscrp-list">
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="grid-hover">
+                        <div class="grid-hover-icons-box">
+                            <ul>
+                                <li class="grid-hover-icons">
+                                    <a href="https://github.com/AWAlemu/Hot-or-cold-react-redux-build" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
+                                    </a>
+                                </li>
+                                <li class="grid-hover-icons">
+                                    <a href="https://awalemu.github.io/Hot-or-cold-react-redux-build" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid">
+                        <div class="proj-img-box in-blk left">
+                            <img class="proj-img" src="image/sf.png">
+                        </div>
+                        <div class="proj-dscrp-box in-blk right">
+                            <h3 class="proj-title">Street Fighter</h3>
+                            <p class="proj-dscrp">Have some fun firing Hadoken and watching Ryu's cool stance.</p>
+                            <ul class="proj-dscrp-list">    
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <ul class="proj-dscrp-list">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="grid-hover">
+                        <div class="grid-hover-icons-box">
+                            <ul>
+                                <li class="grid-hover-icons">
+                                    <a href="https://github.com/AWAlemu/street-fighter" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/github-white-64.png" />
+                                    </a>
+                                </li>
+                                <li class="grid-hover-icons">
+                                    <a href="https://awalemu.github.io/street-fighter/main.html" target="_blank">
+                                        <img src="https://roseemmons.github.io/img/chrome-white-64.png">
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -233,11 +297,11 @@
             </div>
         </div>
     </section>
-    <!-- <hr/> -->
+    <br/>
     <footer class="social">
         <ul>
-            <li class="social-icons"><a href="https://github.com/AWAlemu" target="_blank"><i class="github fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
-            <li class="social-icons"><a href="https://www.linkedin.com/in/alexweldetsadik" target="_blank"><i class=" linkedin fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li class="social-icons in-blk"><a href="https://github.com/AWAlemu" target="_blank"><i class="github fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+            <li class="social-icons in-blk"><a href="https://www.linkedin.com/in/alexweldetsadik" target="_blank"><i class=" linkedin fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
         </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

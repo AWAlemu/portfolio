@@ -31,6 +31,14 @@ section {
     float: right;
 }
 
+.left {
+    float: left;
+}
+
+.in-blk {
+    display: inline-block;
+}
+
 .masthead {
     max-width: 61em;
     height: 7.5em;
@@ -40,16 +48,11 @@ section {
 
 .links {
     float: right;
-    display: inline-block;
     margin-right: 1em;
 }
 
 .nav-links {
     margin-top: 3em;
-}
-
-.nav-links li {
-    display: inline-block;
 }
 
 .nav-links li a:hover {
@@ -80,9 +83,10 @@ section {
     right: 1.25em;
     top: 5.2em;
     width: 7.4em;
-    height: 7.4em;
+    height: 5.55em;
     text-align: left;
     background: url('../image/bg-black-noise-bright.png');
+    z-index: 100;
 }
 
 .drop-menu-div li {
@@ -119,7 +123,6 @@ section {
     border: 1px solid black;
     background: url('../image/bg-black-noise-bright.png');
     background-repeat: no-repeat;
-    display: inline-block;
 }
 
 .name:hover {
@@ -139,7 +142,7 @@ section {
 }
 
 #last {
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.4em;
 }
 
@@ -152,10 +155,11 @@ section {
     max-width: 61em;
     min-height: 28.5em;
     height: 77%;
-    margin: 0.5em auto 0em auto;
+    margin: 0.5em auto 4em auto;
     padding: 0.25em 1em;
     border-top: 0.1px solid hidden;
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 }
 
 .text {
@@ -176,23 +180,19 @@ section {
     border: 1px solid black;
 }
 
-.about .content {
-    background-color: rgba(255,255,255,1);
-}
-
 .hidden {
     display: none;
 }
 
 .social {
+    width: 100%;
     height: 3em;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
     margin: 0em auto 0em auto;
     padding: 0.5em 1em;
     text-align: center;
-}
-
-.social-icons {
-    display: inline-block;
 }
 
 .github {
@@ -204,19 +204,39 @@ section {
     margin-left: 1em;
 }
 
+.bio {
+    max-width: 50.6875em;
+    border-top: 1px solid #fff;
+    margin: 0 auto;
+    padding: 1em;
+    background: #fff;
+}
+
+.bio h3 {
+    font-weight: 700;
+}
+
 .home,
 .resume {
     text-align: center;
 }
 
 .greeting {
+    width: 5em;
+    height: 4em;
     position: absolute;
-    top: 35%;
-    left: 46%;
+    top: 50%;
+    left: 50%;
+    margin-top: -2em;
+    margin-left: -2.5em;
     font-family: 'Rajdhani', sans-serif;
     font-size: 2.5em;
     color: white;
     background-color: rgba(0,0,0,.6);
+}
+
+.greeting h1 {
+    margin: 0;
 }
 
 #email {
@@ -228,33 +248,31 @@ section {
 }
 
 .row {
+    width: 100%;
     height: 15em;
     margin-bottom: 1em;
+    background-color: #fff;
+    z-index: 5;
 }
-
 .grid {
-    width: 29em;
     height: 15em;
-    display: inline-block;
-    overflow: hidden;
 }
 
 .grid-hover {
-	width: 29em;
-	height: 15em;
+    height: 15em;
 	background-color: black;
-	opacity: 0.75;
+	opacity: 0.85;
 	border: 0.1px solid black;
 	cursor: pointer;
 	position: relative;
-	top: -15.25em;
-	z-index: 1;
+	top: -15em;
+	z-index: -1;
 }
 
 .grid-hover-icons-box {
-	width: 10em;
-	height: 15em;
-	padding: 3em 0em;
+	width: 12em;
+	height: 5em;
+    margin: 5em auto;
 	text-align: center;
 }
 
@@ -269,27 +287,36 @@ section {
     opacity: 0.25;
 }
 
-.proj-dscrp {
-	width: 18.5em;
+.proj-dscrp-box {
+	width: 29em;
 	height: 15em;
-	padding-left: 0.5em;
-	color: #fff;
+	padding: 0 0.5em;
+	color: black;
 }
 
 .proj-dscrp-list {
 	width: 9em;
-	padding-left: 2em;
+    margin: auto;
+    display: inline-block;
+}
+
+.proj-img-box {
+    height: 15em;
 }
 
 .proj-img {
     width: 29em;
     height: 15em;
     position: relative;
-    z-index: 5;
+}
+
+.proj-dscrp {
+    margin-top: 0.25em;
 }
 
 .proj-title {
 	text-align: center;
+    margin-bottom: 0;
 }
 
 /*Media Queries*/
